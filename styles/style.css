@@ -8,3 +8,64 @@ body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
+
+.header {
+  background-image: url("/images/bgtile.png");
+  background-color: #06365f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 40vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  top: -20vh;
+  gap: 30px;
+}
+
+.join {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info {
+  background-image: url('/images/frame.png');
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.info h1 {
+  font-size: 1.2rem;
+  width: 250px;
+}
+
+.info p {
+  width: 300px;
+}
+
+
+
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  font-size: 0.8rem;
+  gap: 10px;
+}
+
+footer ul li {
+  text-transform: capitalize;
+}
