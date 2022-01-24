@@ -32,6 +32,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+
+.join button {
+  background: linear-gradient(135deg, rgb(68, 119, 160) 70%, rgb(30, 82, 128) 100%);
+  box-shadow: 5px 1px #06365f ;
+  height: 50px;
+  border: 0px;
+  border-radius: 5px;
+  margin-left: 20px;
+  color: white;
 }
 
 .info {
@@ -42,16 +53,27 @@ body {
   width: 400px;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 25px;
+  padding-top: 30px;
 }
 
 .info h1 {
   font-size: 1.2rem;
-  width: 250px;
+  width: 300px;
+  color: #06365f;
 }
 
 .info p {
-  width: 300px;
+  width: 350px;
+  line-height: 25px;
+}
+
+.devices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px;
+  margin-left: -10px;
 }
 
 
@@ -63,9 +85,40 @@ footer ul {
   justify-content: center;
   list-style: none;
   font-size: 0.8rem;
+  font-weight: 600;
   gap: 10px;
+  color: #1c5380;
+  text-transform:uppercase;
 }
 
-footer ul li {
-  text-transform: capitalize;
+@media (min-width: 250px) and (max-width: 844px) {
+
+.header {
+  width: 100%
+  heigth: 10vh;
+}
+
+.join > img {
+  width: 150px;
+}
+
+.info {
+  margin-left: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  position: relative;
+  top: -600px;
+}
+
+.main > img {
+  position: relative;
+  top: 1100px;
+}
+
 }
